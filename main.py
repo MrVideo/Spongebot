@@ -16,13 +16,14 @@ async def on_message(message):
         await client.process_commands(message)
 
 @client.command(name='sponge')
-async def sponge(ctx, *, str: str):
-    "Converts text into Spongetext"
+async def test(ctx, *, str: str):
+    "Deletes user message and sends the spongified string"
     str = str.lower()
     for i in range(len(str)):
         sub = str[i:i+1]
         if(rnd.randrange(2) == 1):
             str = str.replace(sub, sub.upper(), 1)
-    await ctx.send('Your spongified string is: ' + str)
+    await ctx.message.delete()
+    await ctx.send(str)
 
 client.run(token)
