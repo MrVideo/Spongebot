@@ -1,9 +1,10 @@
 # Spongebot
+
 A Discord bot made with Python that converts strings to SPonGETexT.
 
-## Invite link
+As of 10 April 2023, this repository is archived. The bot's codebase was migrated to JavaScript to take advantage of new features like slash commands.
 
-You can use [this link](https://discord.com/api/oauth2/authorize?client_id=899379418261258291&permissions=534723950656&scope=bot) to invite it to your server.
+You can find the new bot [here](https://github.com/MrVideo/spongebot.js).
 
 ## Commands
 
